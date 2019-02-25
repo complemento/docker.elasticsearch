@@ -1,5 +1,4 @@
-FROM elasticsearch:6.5.1
+FROM elasticsearch:5.6
 
 
-RUN echo "cluster.routing.allocation.disk.threshold_enabled: false" > /usr/share/elasticsearch/config/elasticsearch.yml \
-    && echo "y" | elasticsearch-plugin install ingest-attachment
+RUN echo "y" | elasticsearch-plugin install ingest-attachment
