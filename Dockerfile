@@ -1,4 +1,4 @@
-FROM elasticsearch:7.13.2
+FROM elasticsearch:7.14.0
 
 
 RUN echo "cluster.routing.allocation.disk.threshold_enabled: false" >> /usr/share/elasticsearch/config/elasticsearch.yml \
